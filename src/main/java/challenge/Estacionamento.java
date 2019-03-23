@@ -30,7 +30,7 @@ public class Estacionamento {
     }
 
     // carros estacionados
-    public Integer carrosEstacionados() {
+    public long carrosEstacionados() {
         return carros.size();
     }
 
