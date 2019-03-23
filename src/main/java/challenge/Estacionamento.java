@@ -10,4 +10,28 @@ public class Estacionamento {
 
     // Set collection - nao havera carros duplicados e ordenacao importa
     private LinkedHashSet<Carro> carros = new LinkedHashSet<>();
+
+    public Integer getVAGAS() {
+        return VAGAS;
+    }
+
+    public LinkedHashSet<Carro> getCarros() {
+        return carros;
+    }
+
+    // estacionar
+    public void estacionar(Carro carro) {
+        carros.add(carro);
+    }
+
+    // carro estacionado
+    public Boolean carroEstacionado(Carro carro) {
+        return true;
+    }
+
+    // carros estacionados
+    public Integer carrosEstacionados() {
+        return carros.size();
+    }
+
 }

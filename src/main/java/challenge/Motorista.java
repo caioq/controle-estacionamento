@@ -6,5 +6,5 @@ public class Motorista {
 
     private Integer idade;
 
-    private Cnh cnh;
+    private Integer pontos;
 }
