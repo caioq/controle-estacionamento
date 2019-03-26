@@ -18,11 +18,17 @@ public class MotoristaBuilder {
     }
 
     public MotoristaBuilder withIdade(Integer idade) {
+        if(idade < 0){
+            throw new IllegalArgumentException("Idade deve ser positivo.");
+        }
         this.idade = idade;
         return this;
     }
 
     public MotoristaBuilder withPontos(Integer pontos) {
+        if(pontos < 0){
+            throw new IllegalArgumentException("Pontos deve ser positivo.");
+        }
         this.pontos = pontos;
         return this;
     }

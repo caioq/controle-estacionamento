@@ -17,6 +17,22 @@ public class Motorista {
         this.habilitacao = habilitacao;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public Integer getPontos() {
+        return pontos;
+    }
+
+    public String getHabilitacao() {
+        return habilitacao;
+    }
+
     public static MotoristaBuilder builder() {
         return new MotoristaBuilder();
     }
