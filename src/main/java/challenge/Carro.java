@@ -1,5 +1,7 @@
 package challenge;
 
+import java.util.Objects;
+
 public class Carro {
 
     private Motorista motorista;
@@ -53,14 +55,8 @@ public class Carro {
         }
 
         public Carro build() {
-            if (placa == null) {
-                throw new NullPointerException("A placa é obrigatório");
-            }
-
-            if (cor == null) {
-                throw new NullPointerException("A cor é obrigatório");
-            }
-
+            Objects.requireNonNull(placa, "A placa é obrigatório.");
+            Objects.requireNonNull(cor, "A cor é obrigatório.");
             if (motorista == null) {
                 throw new EstacionamentoException("O motorista é obrigatório");
             }
