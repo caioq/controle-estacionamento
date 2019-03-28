@@ -1,9 +1,9 @@
 package challenge;
 
-import challenge.exceptions.EstacionamentoException;
-
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.Queue;
+import java.util.Set;
 
 import static java.util.concurrent.ThreadLocalRandom.current;
 
@@ -12,13 +12,13 @@ public class Estacionamento {
     private final Integer VAGAS = 10;
 
     // Set collection - nao havera carros duplicados e ordenacao importa
-    private LinkedHashSet<Carro> carros = new LinkedHashSet<>();
+    private Set<Carro> carros = new LinkedHashSet<>();
 
     public Integer getVAGAS() {
         return VAGAS;
     }
 
-    public LinkedHashSet<Carro> getCarros() {
+    public Set<Carro> getCarros() {
         return carros;
     }
 
