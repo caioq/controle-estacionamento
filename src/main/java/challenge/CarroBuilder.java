@@ -1,9 +1,5 @@
 package challenge;
 
-import challenge.exceptions.EstacionamentoException;
-
-import java.util.Objects;
-
 public class CarroBuilder {
 
     private Motorista motorista;
